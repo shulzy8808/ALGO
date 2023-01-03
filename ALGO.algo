@@ -1,0 +1,38 @@
+//write an algorithm that read a sentence, which ends with a point, character by character, and to determine:
+ALGORITHM num_of_characters
+VAR
+STR: STRING := "I learn at GOMYCODE."
+count: INTEGER:= 1
+BEGIN
+FOR I FROM 1 TO STR.LENGTH STEP DO
+COUNT= COUNT+I
+END_FOR 
+WRITE(COUNT);
+
+
+// The number of words in the sentence (assuming that the words are separated by a single space).
+ALGORITHM num_of_words
+VAR
+STR: STRING := "I learn at GOMYCODE."
+STRS: STR.SPLIT(' ');
+count: INTEGER:= 1
+BEGIN
+FOR I FROM 1 TO STRS.LENGTH STEP DO
+COUNT= COUNT+I
+END_FOR 
+WRITE(COUNT);
+
+//The number of vowels in the sentence.
+ALGORITHM num_of_vowels
+VAR
+STR: STRING := "I learn at GOMYCODE."
+count: INTEGER:= 1
+BEGIN
+FOR I FROM 1 TO STR.LENGTH STEP DO
+ STRS = STR.charAt(i)
+COUNT= COUNT+I
+IF (STRS=='a' ||  STRS=='e' || STRS=='i' || STRS=='o' || STRS=='u')
+   THEN
+   COUNT++
+END_FOR 
+WRITE(COUNT);
